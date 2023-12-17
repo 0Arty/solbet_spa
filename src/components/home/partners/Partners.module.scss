@@ -1,0 +1,41 @@
+.container {
+    margin-top: 50px;
+    width: 100%;
+    h2 {
+        color: #FFF;
+        font-family: Chakra Petch;
+        font-size: 57px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 68.4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .list {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        svg{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        h2{
+            font-size: 36px;
+        }
+        .list{
+            flex-direction: column;
+            margin-top: 40px;
+            svg {
+                width: 60%;
+
+            }
+        }
+    }
+}

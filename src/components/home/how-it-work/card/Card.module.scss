@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    min-height: 100px;
+    // width: 320px;
+    align-items: center;
+    justify-self: center;
+
+    .image {
+        width: 80px;
+        height: 80px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 210px;
+        justify-content: space-between;
+
+        h2 {
+            color: #FFF;
+
+            /* Heading/Heading - H4 */
+            font-family: Chakra Petch;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38.4px;
+            /* 120% */
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #D3D3FE;
+
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25.2px;
+            /* 140% */
+        }
+    }
+}
+@media screen and (max-width: 680px){
+    .card{
+    }
+}

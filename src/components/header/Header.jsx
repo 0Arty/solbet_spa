@@ -19,7 +19,9 @@ import Selector from "./selector/Selector"
 const Header = ({ props }) => {
 
     return (
-        <header className={style.container}>
+        <header className = {style.wrapper}>
+            <div className={style.container}>
+
             <img src={logo} alt="" className={style.logo} />
 
             <div className = {style.links}>
@@ -29,6 +31,8 @@ const Header = ({ props }) => {
                 <Selector />
             </div>
             <button className={style.btn}>CONNECT</button>
+            </div>
+            <hr className = {style.line}/>
         </header>
     )
 };

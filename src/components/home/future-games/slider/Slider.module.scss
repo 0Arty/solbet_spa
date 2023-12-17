@@ -1,0 +1,19 @@
+.slider{
+    margin-top: 45px;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    img{
+        display: block;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 768px){
+    .slider{
+        img{
+            height: 200px;
+            }
+    }
+}
