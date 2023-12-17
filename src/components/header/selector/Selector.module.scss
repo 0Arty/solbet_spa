@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.3s;
+    &:hover{
+        cursor: pointer;
+        color: #00FEDF;
+        transition: 0.3s;
+    }
+    .image{
+        width: 16px;
+    }
+
+    .selector{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .language{
+            margin: 0 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+        .image{
+            width: 40px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 530px){
+    .container{
+        .image{
+            width: 30px;
+        }
+        font-size: 16px;
+    }
+}

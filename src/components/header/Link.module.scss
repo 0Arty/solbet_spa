@@ -1,0 +1,37 @@
+.container{
+    color: white;
+    &:hover {
+        transition: 0.3s;
+        color: #00FEDF;
+        cursor: pointer;
+    }
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .image{
+        display: none;
+    }
+    .selector{
+        display: flex;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        .image{
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 530px){
+    .container{
+        .image{
+            width: 30px;
+        }
+        font-size: 16px;
+    }
+}
