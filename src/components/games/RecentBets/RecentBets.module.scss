@@ -1,0 +1,36 @@
+.wrapper {
+  margin: -240px 0 0 0;
+  background: #0D0D48;
+  width: 100%
+}
+
+.tableWrapper {
+  width: 80%;
+  max-width: 980px;
+  min-width: 745px;
+  margin: 0 auto
+}
+
+@media screen and (max-width: 769px) {
+  .wrapper {
+    margin: -41px 0 0 0;
+  }
+
+  .tableWrapper {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Chakra Petch;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68.4px; /* 120% */
+  text-transform: uppercase;
+  padding-bottom: 20px
+}

@@ -1,29 +1,17 @@
 import style from "./TableRow.module.scss"
+import classNames from 'classnames';
 
 const TableRow = ({ data }) => {
-
-
-    // game:{
-    //     img: game1,
-    //     title: "Fishing Disco"
-    // },
-    // player : 'BESSIE COOPER',
-    // id : '30320267096',
-    // payout: '0.70X',
-    // profit: {
-    //     img: ic1,
-    //     title: '+ 0.00312150'
-    // }
 
     return (
         <tr className={style.row}>
             <td>
                 <div className={style.game}>
                     <div>
-                        <img src={data.profit.img} alt="" />
+                      {!!data.game.img && <img src={data.game.img} alt=""/>}
                     </div>
                     <span>
-                        {data.profit.title}
+                        {data.game.title}
 
                     </span>
                 </div>
@@ -36,9 +24,8 @@ const TableRow = ({ data }) => {
                     <div>
                         <img src={data.profit.img} alt="" />
                     </div>
-                    <span>
+                    <span className={classNames(!!data.profit.red ? style.red : style.green)}>
                         {data.profit.title}
-
                     </span>
                 </div>
             </td>
