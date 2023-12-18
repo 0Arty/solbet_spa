@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
     min-height: 450px;
     margin-top: 450px;
@@ -8,8 +8,29 @@
     flex-direction: column;
     position: relative;
     background: #220970;
-    .children{
+
+    .children {
         top: -270px;
         position: absolute;
+    }
+
+    .content {
+        width: 1110px;
+        display: flex;
+
+        .links {
+            display: flex;
+            gap: 30px;
+            color: var(--white-f, #FFF);
+            text-align: center;
+            /* Body text/Medium Text Bold uppcase */
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25.2px;
+            /* 140% */
+            text-transform: uppercase;
+        }
     }
 }

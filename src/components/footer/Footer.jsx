@@ -1,5 +1,9 @@
 import style from "./Footer.module.scss"
 import { ReactComponent as LogoSvg } from "../../assets/header/logo.svg";
+import LinkElement from "../header/Link";
+import Selector from "../header/selector/Selector";
+
+
 
 const Footer = ({ children }) => {
 
@@ -9,9 +13,16 @@ const Footer = ({ children }) => {
                 {children}
             </div>
 
-            <div>
+            <div className = {style.content}>
                 <LogoSvg />
-                <div></div>
+                <div className = {style.links}>
+                <LinkElement  text={'HOME'} />
+                <LinkElement  text={'GAMES'}/>
+                <LinkElement text={'FAQ'} />
+                <Selector />
+                
+                
+            </div>
             </div>
         </footer>
     )
