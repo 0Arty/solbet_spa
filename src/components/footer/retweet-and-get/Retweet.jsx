@@ -1,8 +1,7 @@
 import style from "./Retweet.module.scss"
-import { ReactComponent as TweeterSVG } from "../../assets/main/footer/retweet/tweeter.svg";
-
-import chest from '../../assets/main/footer/retweet/chest.png'
-import rocket from '../../assets/main/footer/rocket.svg'
+import { ReactComponent as TweeterSVG } from "../../../assets/main/footer/retweet/tweeter.svg";
+import chest from '../../../assets/main/footer/retweet/chest.png'
+import rocket from '../../../assets/main/footer/rocket.svg'
 
 const Retweet = ({props}) => {
 

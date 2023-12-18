@@ -1,7 +1,6 @@
-import style from "./Faq.module.scss"
+import style from '../components/faq/Faq.module.scss'
 
-const Faq = ({props}) => {
-
+const FAQ = () => {
   return (
     <div className = {style.box}>
         <h2>frequently asked questions</h2>
@@ -15,6 +14,6 @@ const Faq = ({props}) => {
         </div>
     </div>
   )
-};
+}
 
-export default Faq;
+export default FAQ
