@@ -1,0 +1,129 @@
+.box {
+    margin-top: 120px;
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bc_ground {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #151553;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        width: 1110px;
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+
+            .text {
+                h2 {
+                    margin-top: 120px;
+                    color: #FFF;
+                    font-family: Chakra Petch;
+                    font-size: 57px;
+                    font-weight: 700;
+                    line-height: 68.4px;
+                    text-transform: uppercase;
+
+                }
+
+                p {
+                    color: #DCE6FF;
+                    margin-top: 30px;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 25.2px;
+                }
+            }
+
+            .toggler {
+                align-self: flex-end;
+
+                height: 56px;
+                border-radius: 28px;
+                background-color: #171789;
+                display: flex;
+                color: #FFF;
+
+                text-align: center;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 25.2px;
+                /* 140% */
+                text-transform: uppercase;
+
+
+                .bets {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 174px;
+                    border-radius: 28px;
+                    background-color: #4e01ce;
+                    height: 100%;
+                }
+
+                .contest {
+                    height: 100%;
+                    width: 141px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .box{
+        .content{
+            width: 100%;
+            // padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 769px){
+
+    .box{
+        .content{
+            .heading{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .toggler{
+                    margin-top: 60px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

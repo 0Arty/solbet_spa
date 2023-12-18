@@ -1,0 +1,86 @@
+.container {
+    margin-top: 150px;
+    width: 1110px;
+    min-height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Chakra Petch;
+        font-size: 57px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 68.4px;
+        text-transform: uppercase;
+        position: inherit;
+        z-index: 2;
+    }
+
+    p {
+        position: inherit;
+        z-index: 2;
+        margin-top: 30px;
+        color: #DCE6FF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.2px;
+        /* 140% */
+    }
+
+    .questBlock{
+        margin-top: 60px;
+        width: 635px;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        z-index: 2;
+        
+
+
+    }
+
+    .icon{
+        position: absolute;
+        left: -150px;
+        top: 100px;
+        z-index: 0;
+        
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        .questBlock{
+            align-self: center;
+        }
+        .icon{
+            opacity: 0.5;
+            top: 200px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+
+@media screen and (max-width: 675px){
+    .container{
+        .questBlock{
+            width: 100%;
+        }
+    }
+}

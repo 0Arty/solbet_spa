@@ -4,5 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 8000px;
+
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        padding-bottom: 95px;
+    }
 }
