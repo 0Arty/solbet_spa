@@ -39,7 +39,7 @@ const data = [
 const PlayerProfile = ({item}) => {
   return (
     <div className={style.profileCard}>
-      <img src={item.placeImg} alt={''}/>
+      <img className={style.placeImg} src={item.placeImg} alt={''}/>
       <div className={style.playerInfo}>
         <img src={item.player.img} alt={''}/>
         <p>{item.player.name}</p>

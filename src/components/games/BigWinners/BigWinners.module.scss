@@ -97,6 +97,10 @@
   margin: 0 auto
 }
 
+.placeImg {
+  display: block
+}
+
 .profileCard {
   display: flex;
   justify-content: space-between;
@@ -164,6 +168,18 @@
 @media screen and (max-width: 660px) {
   .recentWinsCard {
     padding: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .placeImg {
+    display: none
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .winnerCard {
     width: 100%;
   }
 }
