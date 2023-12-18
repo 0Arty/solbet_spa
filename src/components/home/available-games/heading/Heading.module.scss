@@ -1,6 +1,6 @@
 .container {
     width: 1110px;
-    margin: 120px auto 0;
+    margin: 120px auto 110px;
     display: flex;
     justify-content: space-between;
 
@@ -61,6 +61,7 @@
 
 @media screen and (max-width: 768px){
     .container{
+        margin-bottom: 60px;
         .text{
             h2{
                 line-height: 100%;

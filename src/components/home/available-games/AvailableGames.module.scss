@@ -1,10 +1,9 @@
 .container{
-    margin-top: 50px;
     width: 100%;
     min-height: 930px;
     background: #0D0D48;
     .games{
-        margin-top: 110px;
+        //margin-top: 110px;
         display: flex;
         gap: 25px;
         justify-content: center;
@@ -23,11 +22,9 @@
 
 @media screen and (max-width: 768px){
     .container{
-        margin-top: 20px;
         margin-bottom: 40px;
         padding-bottom: 40px;
         .games{
-            margin-top: 60px;
             scale: 1;
             flex-direction: column;
             justify-content: center;
