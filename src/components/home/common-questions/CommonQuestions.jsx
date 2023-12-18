@@ -15,9 +15,7 @@ const CommonQuestions = ({props}) => {
             <Question text={'Question?'} answer={'3 Duis sapien justo, posuere interdum mauris eu, '}/>
             <Question text={'Question?'} answer={'4 Duis sapien justo, posuere interdum mauris eu,'}/>
             <Question text={'Question?'} answer={'5 Duis sapien justo, posuere interdum mauris eu, tincidunt placerat ante. Curabitur aliquet leo ipsum, at maximus dolor fringilla vel. Aliquam sagittis elementum volutpat. Vestibulum vel arcu nisl.'}/>
-            <Question text={'Question?'} answer={'6 Duis sapien justo, posuere interdum mauris eu, tincidunt placerat ante. Curabitur aliquet leo ipsum, at maximus dolor fringilla vel. Aliquam sagittis elementum volutpat. Vestibulum vel arcu nisl.'}/>
-        
-        
+            <Question text={'Question?'} answer={'6 Duis sapien justo, posuere interdum mauris eu, tincidunt placerat ante. Curabitur aliquet leo ipsum, at maximus dolor fringilla vel. Aliquam sagittis elementum volutpat. Vestibulum vel arcu nisl.'}/>       
         </div>
         <img src={frame} alt="" className = {style.icon}/>
     </div>
