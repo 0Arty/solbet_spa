@@ -1,22 +1,16 @@
+// icons
 import style from "./Header.module.scss"
 import logo from '../../assets/header/logo.svg'
-// import { ReactComponent as PlanetSVG } from "../../assets/header/planet.svg"
-import { ReactComponent as ArrowSvg } from "../../assets/header/down_arrow.svg"
-import { ReactComponent as HomeSvg } from "../../assets/header/home.svg"
-import { ReactComponent as GamesSvg } from "../../assets/header/games.svg"
-import { ReactComponent as FaqSvg } from "../../assets/header/faq.svg"
-
-
-
 import home from "../../assets/header/home.svg"
-
 import games from "../../assets/header/games.svg"
 import faq from "../../assets/header/faq.svg"
-
-
+// components
 import LinkElement from "./Link"
 import Selector from "./selector/Selector"
-const Header = ({ props }) => {
+// constants
+import { RouteNames } from '../../constants/routes'
+
+const Header = () => {
 
     return (
         <header className = {style.wrapper}>
@@ -25,9 +19,9 @@ const Header = ({ props }) => {
             <img src={logo} alt="" className={style.logo} />
 
             <div className = {style.links}>
-                <LinkElement svg={home} text={'HOME'} />
-                <LinkElement svg={games} text={'GAMES'}/>
-                <LinkElement svg={faq} text={'FAQ'} />
+                <LinkElement svg={home} text={'HOME'} link={RouteNames.init} />
+                <LinkElement svg={games} text={'GAMES'} link={RouteNames.games} />
+                <LinkElement svg={faq} text={'FAQ'} link={RouteNames.faq} />
                 <Selector />
             </div>
             <button className={style.btn}>CONNECT</button>
