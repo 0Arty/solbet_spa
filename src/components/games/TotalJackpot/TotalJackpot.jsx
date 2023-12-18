@@ -1,28 +1,7 @@
 import style from './TotalJackpot.module.scss'
-import chest from '../../../assets/main/games-page/chest3.png'
+import chest from '../../../assets/main/games-page/chest.svg'
 import classNames from 'classnames';
-
-const NumberComponent = ({symbol}) => {
-  return (
-    <div className={style.numberEl}>
-      <p>{symbol}</p>
-    </div>
-  )
-}
-
-const TotalJackpotComponent = ({ amount }) => {
-  const symbolArr = ['€' ,...amount.split('')]
-  
-  return (
-    <div className={style.jackpotWrapper}>
-      {!!symbolArr.length && symbolArr.map((item) => (
-        <NumberComponent symbol={item} />
-      ))}
-    </div>
-  )
-}
-
-
+import { TotalJackpotComponent } from './TotalJackpotComponent'
 
 const TotalJackpot = () => {
   return (

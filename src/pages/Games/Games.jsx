@@ -8,6 +8,7 @@ import Footer from '../../components/footer/Footer'
 import Retweet from '../../components/footer/retweet-and-get/Retweet'
 import RecentBets from '../../components/games/RecentBets'
 import TotalJackpot from '../../components/games/TotalJackpot'
+import BigWinners from '../../components/games/BigWinners'
 
 const Games = () => {
   return (
@@ -16,6 +17,7 @@ const Games = () => {
       <AvailableGames><CardsTitle /></AvailableGames>
       <RecentBets />
       <TotalJackpot />
+      <BigWinners />
       <LatestActivities />
       <LevelUp />
       <Footer children={<Retweet />} />
