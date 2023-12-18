@@ -6,6 +6,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    overflow-x: hidden;
 
     // align-items: center;
     img {
@@ -20,6 +21,7 @@
     .right_image {
         right: 0;
         bottom: 0;
+        position: absolute;
     }
 
     .content {
