@@ -11,6 +11,7 @@ import LatestActivities from "./latest-activities/LatestActivities";
 import CommonQuestions from "./common-questions/CommonQuestions";
 import Footer from "../footer/Footer";
 import SendEmail from "../send-email/SendEmail";
+import Retweet from "../retweet-and-get/Retweet";
 
 const Home = ({props}) => {
 
@@ -28,7 +29,8 @@ const Home = ({props}) => {
       <CommonQuestions />
 
 
-      <Footer children={<SendEmail />}/>
+      <Footer children={<Retweet />}/>
+      {/* <Footer children={<SendEmail />}/> */}
     </div>
   )
 };
