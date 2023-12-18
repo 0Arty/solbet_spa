@@ -1,8 +1,13 @@
 import style from "./Heading.module.scss"
 import { ReactComponent as RightSvg } from "../../../../assets/main/features/right arrow.svg"
+import { RouteNames } from '../../../../constants/routes'
 
-const Heading = ({ props }) => {
-
+const Heading = () => {
+  
+  const redirect = (link) => () => {
+    window.location.href = link
+  }
+  
     return (
         <div className={style.container}>
             <div className={style.text}>
@@ -10,11 +15,11 @@ const Heading = ({ props }) => {
                 <p>To meet today's challenges & earn cryptocurrency</p>
             </div>
             <div className={style.btns}>
-                <button>
+                <button onClick={redirect(RouteNames.games)}>
                     GAMES
                     <RightSvg />
                 </button>
-                <button>
+                <button onClick={redirect(RouteNames.faq)}>
                     FAQ
                     <RightSvg />
                 </button>

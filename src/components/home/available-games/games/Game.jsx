@@ -4,7 +4,7 @@ import { ReactComponent as StarSvg } from "../../../../assets/main/available gam
 import classNames from "classnames";
 
 
-const Game = ({ props }) => {
+const Game = () => {
 
     return (
         <div className={style.card}>

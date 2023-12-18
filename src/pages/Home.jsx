@@ -11,26 +11,29 @@ import LevelUp from "../components/home/level-up/LevelUp";
 import Partners from "../components/home/partners/Partners";
 import Preview from "../components/home/preview/Preview";
 import SendEmail from '../components/footer/send-email/SendEmail';
+import Heading from '../components/home/available-games/heading/Heading';
 
-const Home = ({ props }) => {
+const Home = () => {
 
-    return (
-        <div className={style.wrapper}>
-            <Preview />
-            <HowItWork />
-            <FutureGames />
-            <Partners />
-            <AvailableGames />
-            <LevelUp />
-            <BiggestWinners />
-            <Icons />
-            <LatestActivities />
-            <CommonQuestions />
+  return (
+    <div className={style.wrapper}>
+      <Preview />
+      <HowItWork />
+      <FutureGames />
+      <Partners />
+      <AvailableGames>
+        <Heading />
+      </AvailableGames>
+      <LevelUp />
+      <BiggestWinners />
+      <Icons />
+      <LatestActivities />
+      <CommonQuestions />
 
-            <Footer children={<SendEmail />} />
-            {/* <Footer children={<SendEmail />}/> */}
-        </div>
-    )
+      <Footer children={<SendEmail />} />
+      {/* <Footer children={<SendEmail />}/> */}
+    </div>
+  )
 };
 
 export default Home;

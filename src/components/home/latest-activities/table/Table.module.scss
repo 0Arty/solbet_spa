@@ -1,8 +1,11 @@
-.wrapper {
+.additionalWrapper {
     margin-top: 60px;
-    width: 100%;
     min-height: 400px;
     background: linear-gradient(180deg, #1D0D80 0%, rgba(0, 0, 62, 0.00) 100%);
+}
+
+.wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

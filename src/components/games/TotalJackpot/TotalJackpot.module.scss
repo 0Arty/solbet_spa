@@ -1,0 +1,68 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #0D0D48;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 17px;
+  box-shadow: -25px 25px 0px 0px rgba(240, 46, 170, 0.05), -20px 20px 0px 0px rgba(240, 46, 170, 0.10), -15px 15px 0px 0px rgba(240, 46, 170, 0.20), -10px 10px 0px 0px rgba(240, 46, 170, 0.30), -5px 5px 0px 0px rgba(240, 46, 170, 0.40);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Chakra Petch;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68.4px; /* 120% */
+  text-transform: uppercase;
+  padding-bottom: 54px;
+}
+
+.reverted {
+  transform: scaleX(-1);
+}
+
+.chest {
+  width: 353px;
+  height: 311px;
+}
+
+.jackpotWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.numberEl {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 5px;
+  color: var(--n4, #00FEDF);
+  text-align: center;
+  /* Heading/Heading - H1 */
+  font-family: Chakra Petch;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .chest {
+    display: none
+  }
+
+  .numberEl {
+    font-size: 35px;
+    line-height: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
