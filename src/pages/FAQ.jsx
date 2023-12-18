@@ -9,8 +9,11 @@ import casino from '../assets/menu/game/casino.svg'
 const FAQ = () => {
   return (
     <div className={style.box}>
-      <Menu right={casino} left={globe}/>
-      <h2>frequently asked questions</h2>
+      <Menu right={casino} left={globe} heading={'FAQ'} page={'FAQ'}/>
+
+
+
+      <h2 className = {style.text}>frequently asked questions</h2>
       <p>Play in multi-player tournaments or head to head for cash prizes.</p>
 
       <div className={style.btns}>

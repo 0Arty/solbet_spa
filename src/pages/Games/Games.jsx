@@ -17,7 +17,7 @@ const Games = () => {
   return (
     <div className={style.wrapper}>
       {/* <img src={header} alt="" className={style.image} /> */}
-      <Menu img={bg} right={girl}/>
+      <Menu img={bg} right={girl} heading={'BETS'} page={'Bets'}/>
       <AvailableGames><CardsTitle /></AvailableGames>
       <RecentBets />
       <TotalJackpot />
