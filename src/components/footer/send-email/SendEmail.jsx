@@ -1,7 +1,7 @@
 import style from "./SendEmail.module.scss"
 
-import win from '../../assets/main/footer/win.svg'
-import rocket from '../../assets/main/footer/rocket.svg'
+import win from '../../../assets/main/footer/win.svg'
+import rocket from '../../../assets/main/footer/rocket.svg'
 
 
 const SendEmail = ({ props }) => {
