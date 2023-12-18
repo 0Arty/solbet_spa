@@ -2,11 +2,18 @@ import style from '../components/faq/Faq.module.scss'
 import Question from '../components/faq/question/Question'
 import SendEmail from '../components/footer/send-email/SendEmail'
 import Footer from '../components/footer/Footer'
+import Menu from '../components/menu/Menu'
+import globe from '../assets/menu/game/globe.svg'
+import casino from '../assets/menu/game/casino.svg'
 
 const FAQ = () => {
   return (
     <div className={style.box}>
-      <h2>frequently asked questions</h2>
+      <Menu right={casino} left={globe} heading={'FAQ'} page={'FAQ'}/>
+
+
+
+      <h2 className = {style.text}>frequently asked questions</h2>
       <p>Play in multi-player tournaments or head to head for cash prizes.</p>
 
       <div className={style.btns}>
